@@ -147,7 +147,7 @@ namespace imdb
                 }
             }
 
-            Match descriptionMatch = Regex.Match(html, "<span role=\"presentation\" data-testid=\"plot-xs_to_m\" class=\"sc-466bb6c-0 kJJttH\">(.*?)</span>");
+            Match descriptionMatch = Regex.Match(html, "<span role=\"presentation\" data-testid=\"plot-xl\" class=\"sc-466bb6c-2 eVLpWt\">(.*?)</span>");
             if (descriptionMatch.Success)
             {
                 string description = descriptionMatch.Groups[1].Value;
